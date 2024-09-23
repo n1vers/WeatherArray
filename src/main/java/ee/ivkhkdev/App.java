@@ -1,6 +1,5 @@
 package ee.ivkhkdev;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class App {
@@ -33,10 +32,10 @@ public class App {
                     int month = scanner.nextInt() - 1;
                     System.out.println("Введите день: ");
                     int day = scanner.nextInt() - 1;
-                    weatherManager.printTemperatureForDate(month, day);
+                    weatherManager.TemperatureForDate(month, day);
                     break;
                 case 2:
-                    weatherManager.printAverageMonthlyTemperature();
+                    weatherManager.AverageMonthlyTemperature();
                     break;
                 default:
                     System.out.println("Неверная задача");

@@ -32,17 +32,38 @@ public class WeatherManager {
     }
 
 
-    public void printTemperatureForDate(int month, int day) {
+    public void TemperatureForDate(int month, int day) {
         if (month >= 0 && month < 12 && day >= 0 && day < daysInMonth[month]) {
             System.out.println("Температура на " + (month + 1) + "/" + (day + 1) + ": " + temperatures[month][day].getTemperature() + "°C");
-            printWarmestAndColdestDays();
+            MonthlyTemperatures();
+
+            WarmestAndColdestDays();
         } else {
             System.out.println("Некорректная дата.");
         }
     }
+    public void MonthlyTemperatures() {
+        System.out.printf("%-10s","");
+        for (int day = 0; day < 31; day++) {
+            System.out.printf("%-6d", day + 1);
+        }
+        System.out.println();
 
 
-    public void printWarmestAndColdestDays() {
+        for (int month = 0; month < 12; month++) {
+            System.out.printf("%-10s", getMonthName(month));
+            for (int day = 0; day < 31; day++) {
+                if (day < daysInMonth[month]) {
+                    System.out.printf("%-6d", temperatures[month][day].getTemperature());
+                } else {
+                    System.out.printf("%-6s", " ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    public void WarmestAndColdestDays() {
         Temperature warmest = temperatures[0][0];
         Temperature coldest = temperatures[0][0];
 
@@ -62,7 +83,7 @@ public class WeatherManager {
     }
 
 
-    public void printAverageMonthlyTemperature() {
+    public void AverageMonthlyTemperature() {
         for (int month = 0; month < 12; month++) {
             int sum = 0;
             for (int day = 0; day < daysInMonth[month]; day++) {
@@ -71,5 +92,11 @@ public class WeatherManager {
             double averageTemp = (double) sum / daysInMonth[month];
             System.out.printf("Средняя температура в месяце %d: %.2f°C\n", month + 1, averageTemp);
         }
+    }
+
+    private String getMonthName(int month) {
+        String[] monthNames = {"Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+                "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"};
+        return monthNames[month];
     }
 }

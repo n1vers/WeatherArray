@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e42ebe4b-327f-4f39-881e-e28988836cfd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/ivkhkdev/WeatherArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/ivkhkdev/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/ivkhkdev/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/ivkhkdev/WeatherManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/ivkhkdev/WeatherManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +43,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Venja/IdeaProjects/WeatherArray",
+    "last_opened_file_path": "C:/Users/TEMP.IVKHK.000/IdeaProjects/WeatherArray",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,6 +71,13 @@
       <updated>1727018464928</updated>
       <workItem from="1727018465999" duration="3000" />
       <workItem from="1727018524761" duration="1006000" />
+      <workItem from="1727069374606" duration="109000" />
+      <workItem from="1727069949123" duration="114000" />
+      <workItem from="1727071419331" duration="115000" />
+      <workItem from="1727072800098" duration="40000" />
+      <workItem from="1727074116097" duration="70000" />
+      <workItem from="1727074676018" duration="31000" />
+      <workItem from="1727074791844" duration="2943000" />
     </task>
     <servers />
   </component>
